@@ -120,7 +120,7 @@ class information(commands.Cog):
             members += guild.member_count
 
         embedinfo = discord.Embed(title=f"Информация О Боте",
-                                  description="**Кто такой FsokyCommBot?**\nЭто бот, который создан специально для сервера Fsoky's Community.\nОн является OpenSource ботом, вклад в которого может сделать любой пользователь который знаком с GitHub",
+                                  description="**Кто такой FsokyCommBot?**\nЭто бот, который создан специально для сервера **Fsoky's Community.**\nОн является OpenSource ботом, вклад в которого может сделать любой пользователь который знаком с GitHub",
                                   color=config.COLOR_GOOD)
         embedinfo.set_thumbnail(url=self.bot.user.avatar_url)
         embedinfo.add_field(name=f"Серверов:", value=len(self.bot.guilds), inline=True)
