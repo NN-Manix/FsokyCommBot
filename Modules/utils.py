@@ -29,14 +29,14 @@ class utils(commands.Cog):
                     embed = discord.Embed(
                         title=f'Статистика Коронавируса | {country}',
                         color=config.COLOR_GOOD)
-                    embed.add_field(name=f'Выздоровело:', value=f'{item["recovered"]} человек')
-                    embed.add_field(name=f'Заболеваний:', value=f'{item["cases"]} человек')
-                    embed.add_field(name=f'Погибло:', value=f'{item["deaths"]} человек')
-                    embed.add_field(name=f'Заболеваний за сутки:', value=f'+{item["todayCases"]} человек')
-                    embed.add_field(name=f'Погибло за сутки:', value=f'+{item["todayDeaths"]} человек')
-                    embed.add_field(name=f'Проведено тестов:', value=f'{item["tests"]} человек')
-                    embed.add_field(name=f'Активные зараженные:', value=f'{item["active"]} человек')
-                    embed.add_field(name=f'В тяжелом состоянии:', value=f'{item["critical"]}  человек')
+                    embed.add_field(name=f'Выздоровело:', value=f'**{item["recovered"]}** человек')
+                    embed.add_field(name=f'Заболеваний:', value=f'**{item["cases"]}** человек')
+                    embed.add_field(name=f'Погибло:', value=f'**{item["deaths"]}** человек')
+                    embed.add_field(name=f'Заболеваний за сутки:', value=f'**+{item["todayCases"]}** человек')
+                    embed.add_field(name=f'Погибло за сутки:', value=f'**+{item["todayDeaths"]}** человек')
+                    embed.add_field(name=f'Проведено тестов:', value=f'**{item["tests"]}** человек')
+                    embed.add_field(name=f'Активные зараженные:', value=f'**{item["active"]}** человек')
+                    embed.add_field(name=f'В тяжелом состоянии:', value=f'**{item["critical"]}**  человек')
                     embed.set_thumbnail(url=item["countryInfo"]['flag'])
                     embed.set_footer(text=config.COPYRIGHT_TEXT, icon_url=config.COPYRIGHT_ICON)
 
